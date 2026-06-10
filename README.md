@@ -25,23 +25,16 @@ learning techniques on highly imbalanced real-world financial transaction data.
 - 1,081 duplicate rows detected during quality check
 
 ## Project Structure
+
+```
 fraud_detection_system/
-│
-├── fraud_detection_project.py   ← Complete project (all phases)
-├── graphs/                      ← All saved visualizations
-│   ├── class_distribution.png
-│   ├── time_pattern.png
-│   ├── amount_analysis.png
-│   ├── feature_distribution.png
-│   ├── top20_features.png
-│   ├── correlation_plots.png
-│   └── comparison_charts.png
-├── data/
-│   ├── raw/                     ← Dataset (not tracked — too large)
-│   └── processed/
-├── requirements.txt
+├── fraud_detection_project.py   
+├── graphs/                      
+├── data/                        
+├── requirements.txt             
 ├── .gitignore
 └── README.md
+```
 
 ## 🔬 Phases Completed
 ### ✅ Phase 1: Exploratory Data Analysis
