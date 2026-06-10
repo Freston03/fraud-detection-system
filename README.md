@@ -51,16 +51,20 @@ Looking at absolute correlations with the fraud label, V17 came out on top at 0.
 #### Visualizations
 
 **Class Distribution**
-![Class Distribution](graphs/class_distribution.png)
+![Class Distribution](<img width="1400" height="500" alt="Class Distribution" src="https://github.com/user-attachments/assets/9ff3b571-a665-4ab2-b038-e66325ddba8a" />
+)
 
 **Temporal Patterns**
-![Time Pattern](graphs/time_pattern.png)
+![Time Pattern](<img width="1539" height="805" alt="Time Pattern" src="https://github.com/user-attachments/assets/5e3b4298-8437-48d0-ac32-51d013a1674a" />
+)
 
 **Amount Analysis**
-![Amount Analysis](graphs/amount_analysis.png)
+![Amount Analysis](<img width="1539" height="805" alt="Amount Analysis" src="https://github.com/user-attachments/assets/85d9e89f-307f-477c-81d1-29abeb6aeb40" />
+)
 
 **Feature Distributions**
-![Feature Distribution](graphs/feature_distribution.png)
+![Feature Distribution](<img width="1539" height="805" alt="Feature Distribution Graph" src="https://github.com/user-attachments/assets/197667f7-c0dc-40c4-8525-488289666066" />
+)
 
 ### Phase 2: Feature Engineering & Data Preparation
 
@@ -80,7 +84,8 @@ Starting from 31 original features, 16 new features were engineered bringing the
 #### Most Predictive Features After Engineering
 The interaction features dramatically outperformed all original features. V14 × V4 achieved a correlation of 0.5749 with the fraud label, and V12 × V10 reached 0.5486 — nearly double the correlation of the best individual feature V17 (0.3265). This confirms that fraud behavior is captured not by single features alone but by combinations of them.
 
-![Top 20 Features](graphs/top20_features.png)
+![Top 20 Features](<img width="1200" height="800" alt="Top 20 features" src="https://github.com/user-attachments/assets/5ebadbb4-56ee-49e5-9b69-d1f955443342" />
+)
 
 #### Data Split Strategy
 A temporal split was used rather than a random split. This is critical because in production, a model always predicts future transactions using patterns learned from past ones. Randomising the split would leak future information into training and produce unrealistically optimistic results.
@@ -108,7 +113,8 @@ The **Naive Baseline** always predicts legitimate, achieving 99.90% accuracy whi
 #### Summary
 PR-AUC is used as the primary metric because standard accuracy is completely misleading when 99.83% of transactions are legitimate. The best baseline model is Logistic Regression (Weighted) with a PR-AUC of 0.7896, detecting 89.47% of all frauds. However, all five baselines are expected to be significantly surpassed in Phase 4 using gradient boosting and SMOTE.
 
-![Comparison Charts](graphs/comparison_charts.png)
+![Comparison Charts](<img width="1539" height="805" alt="Comparison Charts" src="https://github.com/user-attachments/assets/d3ac00d9-390a-4bdc-bd45-f966e17ea126" />
+)
 
 ## 🛠️ Tech Stack
 
