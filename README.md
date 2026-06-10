@@ -3,7 +3,6 @@
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![sklearn](https://img.shields.io/badge/scikit--learn-1.3-orange)
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 
 ## Overview
 An end-to-end **fraud detection system** built using advanced statistical 
