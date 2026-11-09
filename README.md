@@ -9,7 +9,7 @@ An end-to-end **fraud detection system** built using advanced statistical
 learning techniques on highly imbalanced real-world financial transaction data.
 
 **Key Challenges Addressed:**
-- Extreme class imbalance (only 0.173% fraud rate — 1 in every 578 transactions)
+- Extreme class imbalance (only 0.173% fraud rate - 1 in every 578 transactions)
 - Feature engineering from anonymized PCA-transformed transaction data
 - Rigorous statistical validation using Mann-Whitney U hypothesis testing
 - Business-oriented evaluation using PR-AUC over standard accuracy
