@@ -51,7 +51,8 @@ Looking at absolute correlations with the fraud label, V17 came out on top at 0.
 #### Visualizations
 
 **Class Distribution**
-![Class Distribution](<img width="1400" height="500" alt="Class Distribution" src="https://github.com/user-attachments/assets/9ff3b571-a665-4ab2-b038-e66325ddba8a" />
+![Class Distribution](<<img width="1400" height="500" alt="Class Distribution" src="https://github.com/user-attachments/assets/9767460c-240d-4815-abc0-04f02a4db3e9" />
+
 )
 
 **Temporal Patterns**
@@ -82,7 +83,7 @@ Starting from 31 original features, 16 new features were engineered bringing the
 **Frequency encoding** - The transaction frequency of each hour and each day was computed and added as a feature, giving the model awareness of how unusual a given time slot is.
 
 #### Most Predictive Features After Engineering
-The interaction features dramatically outperformed all original features. V14 × V4 achieved a correlation of 0.5749 with the fraud label, and V12 × V10 reached 0.5486 — nearly double the correlation of the best individual feature V17 (0.3265). This confirms that fraud behavior is captured not by single features alone but by combinations of them.
+The interaction features dramatically outperformed all original features. V14 × V4 achieved a correlation of 0.5749 with the fraud label, and V12 × V10 reached 0.5486 - nearly double the correlation of the best individual feature V17 (0.3265). This confirms that fraud behavior is captured not by single features alone but by combinations of them.
 
 ![Top 20 Features](<img width="1200" height="800" alt="Top 20 features" src="https://github.com/user-attachments/assets/5ebadbb4-56ee-49e5-9b69-d1f955443342" />
 )
@@ -108,12 +109,13 @@ The **Naive Baseline** always predicts legitimate, achieving 99.90% accuracy whi
 
 **Decision Tree** detected 47 out of 57 frauds but with 663 false alarms and the weakest PR-AUC of 0.6503 among the non-naive models, suggesting it overfits to the majority class pattern.
 
-**Random Forest** struck a reasonable balance — detecting 44 out of 57 frauds with only 28 false alarms and a precision of 0.61. Its PR-AUC of 0.7558 and very low false positive rate of 0.05% make it the most production-friendly baseline despite not having the highest recall.
+**Random Forest** struck a reasonable balance - detecting 44 out of 57 frauds with only 28 false alarms and a precision of 0.61. Its PR-AUC of 0.7558 and very low false positive rate of 0.05% make it the most production-friendly baseline despite not having the highest recall.
 
 #### Summary
 PR-AUC is used as the primary metric because standard accuracy is completely misleading when 99.83% of transactions are legitimate. The best baseline model is Logistic Regression (Weighted) with a PR-AUC of 0.7896, detecting 89.47% of all frauds. However, all five baselines are expected to be significantly surpassed in Phase 4 using gradient boosting and SMOTE.
 
-![Comparison Charts](<img width="1539" height="805" alt="Comparison Charts" src="https://github.com/user-attachments/assets/d3ac00d9-390a-4bdc-bd45-f966e17ea126" />
+![Comparison Charts](<img width="1539" height="805" alt="Comparison Charts" src="https://github.com/user-attachments/assets/eaa61893-a32e-4b43-96d0-7651b594d6c3" />
+
 )
 
 ## 🛠️ Tech Stack
