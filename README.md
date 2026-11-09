@@ -62,7 +62,7 @@ Looking at absolute correlations with the fraud label, V17 came out on top at 0.
 
 
 **Feature Distributions**
-![Feature Distribution](<img width="1539" height="805" alt="Feature Distribution Graph" src="https://github.com/user-attachments/assets/e865bfa1-da30-44ee-b31c-ce5bce488635" />
+<img width="1539" height="805" alt="Feature Distribution Graph" src="https://github.com/user-attachments/assets/e865bfa1-da30-44ee-b31c-ce5bce488635" />
 
 ### Phase 2: Feature Engineering & Data Preparation
 
@@ -110,9 +110,8 @@ The **Naive Baseline** always predicts legitimate, achieving 99.90% accuracy whi
 #### Summary
 PR-AUC is used as the primary metric because standard accuracy is completely misleading when 99.83% of transactions are legitimate. The best baseline model is Logistic Regression (Weighted) with a PR-AUC of 0.7896, detecting 89.47% of all frauds. However, all five baselines are expected to be significantly surpassed in Phase 4 using gradient boosting and SMOTE.
 
-![Comparison Charts](<img width="1539" height="805" alt="Comparison Charts" src="https://github.com/user-attachments/assets/eaa61893-a32e-4b43-96d0-7651b594d6c3" />
+<img width="1539" height="805" alt="Comparison Charts" src="https://github.com/user-attachments/assets/eaa61893-a32e-4b43-96d0-7651b594d6c3" />
 
-)
 
 ## 🛠️ Tech Stack
 
