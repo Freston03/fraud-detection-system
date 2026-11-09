@@ -71,15 +71,15 @@ Looking at absolute correlations with the fraud label, V17 came out on top at 0.
 #### New Features Created
 Starting from 31 original features, 16 new features were engineered bringing the total to 47. These fell into five categories.
 
-**Time-based** — The raw Time column was converted into Hour of day, Day number, and a TimeCategory label (Night, Morning, Afternoon, Evening) to capture behavioral patterns across the day.
+**Time-based** - The raw Time column was converted into Hour of day, Day number, and a TimeCategory label (Night, Morning, Afternoon, Evening) to capture behavioral patterns across the day.
 
-**Amount-based** — The Amount column was log-transformed to reduce skewness, squared to capture nonlinear effects, and binned into five categories ranging from very small to very large transactions.
+**Amount-based** - The Amount column was log-transformed to reduce skewness, squared to capture nonlinear effects, and binned into five categories ranging from very small to very large transactions.
 
-**Statistical** — Across all 28 PCA features (V1–V28), the mean, standard deviation, minimum, maximum, and range were computed per transaction, giving the model a summary view of each row's overall profile.
+**Statistical** - Across all 28 PCA features (V1–V28), the mean, standard deviation, minimum, maximum, and range were computed per transaction, giving the model a summary view of each row's overall profile.
 
-**Interaction features** — Three cross-feature multiplications were created: V14 × V4, V14 × log(Amount), and V12 × V10. These proved to be the most powerful features in the entire dataset.
+**Interaction features** - Three cross-feature multiplications were created: V14 × V4, V14 × log(Amount), and V12 × V10. These proved to be the most powerful features in the entire dataset.
 
-**Frequency encoding** — The transaction frequency of each hour and each day was computed and added as a feature, giving the model awareness of how unusual a given time slot is.
+**Frequency encoding** - The transaction frequency of each hour and each day was computed and added as a feature, giving the model awareness of how unusual a given time slot is.
 
 #### Most Predictive Features After Engineering
 The interaction features dramatically outperformed all original features. V14 × V4 achieved a correlation of 0.5749 with the fraud label, and V12 × V10 reached 0.5486 — nearly double the correlation of the best individual feature V17 (0.3265). This confirms that fraud behavior is captured not by single features alone but by combinations of them.
@@ -146,16 +146,16 @@ python fraud_detection_project.py
 
 ## Key Findings So Far
 
-1. **Severe Imbalance** — 0.173% fraud, ratio 1:578 — accuracy is meaningless, PR-AUC is the metric
-2. **Data Quality** — 1,081 duplicate rows detected and flagged
-3. **Strong Signals** — 25/29 features statistically significant (p < 0.01)
-4. **Interaction Features Win** — V14×V4 correlation 0.5749 vs V14 alone 0.3025
-5. **Class Weighting** — Boosts fraud detection from 70% → 89% recall
-6. **Precision-Recall Trade-off** — LR (Weighted) catches most fraud but generates 828 false alarms vs Random Forest's 28
+1. **Severe Imbalance** - 0.173% fraud, ratio 1:578 - accuracy is meaningless, PR-AUC is the metric
+2. **Data Quality** - 1,081 duplicate rows detected and flagged
+3. **Strong Signals** - 25/29 features statistically significant (p < 0.01)
+4. **Interaction Features Win** - V14×V4 correlation 0.5749 vs V14 alone 0.3025
+5. **Class Weighting** - Boosts fraud detection from 70% → 89% recall
+6. **Precision-Recall Trade-off** - LR (Weighted) catches most fraud but generates 828 false alarms vs Random Forest's 28
 
 ## References
-1. Dal Pozzolo et al. (2018) — *Learned lessons in credit card fraud detection*
-2. He & Garcia (2009) — *Learning from Imbalanced Data*
-3. Chen & Guestrin (2016) — *XGBoost: A Scalable Tree Boosting System*
-4. Chawla et al. (2002) — *SMOTE: Synthetic Minority Over-sampling Technique*
+1. Dal Pozzolo et al. (2018) - *Learned lessons in credit card fraud detection*
+2. He & Garcia (2009) - *Learning from Imbalanced Data*
+3. Chen & Guestrin (2016) - *XGBoost: A Scalable Tree Boosting System*
+4. Chawla et al. (2002) - *SMOTE: Synthetic Minority Over-sampling Technique*
 
