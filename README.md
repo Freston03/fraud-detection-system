@@ -51,23 +51,18 @@ Looking at absolute correlations with the fraud label, V17 came out on top at 0.
 #### Visualizations
 
 **Class Distribution**
-![Class Distribution](<img width="1400" height="500" alt="Class Distribution" src="https://github.com/user-attachments/assets/9767460c-240d-4815-abc0-04f02a4db3e9" />
+<img width="1400" height="500" alt="Class Distribution" src="https://github.com/user-attachments/assets/9767460c-240d-4815-abc0-04f02a4db3e9" />
 
-)
 
 **Temporal Patterns**
-![Time Pattern](<img width="1539" height="805" alt="Time Pattern" src="https://github.com/user-attachments/assets/68a5ec7f-4309-4f74-a395-bd4e439c2c08" />
-)
+<img width="1539" height="805" alt="Time Pattern" src="https://github.com/user-attachments/assets/6d457652-ed8c-4589-b053-49830f7ab91e" />
 
 **Amount Analysis**
-![Amount Analysis](<img width="1539" height="805" alt="Amount Analysis" src="https://github.com/user-attachments/assets/96cd7c10-6c7c-4b98-a84e-5a159d5f80f4" />
+<img width="1539" height="805" alt="Amount Analysis" src="https://github.com/user-attachments/assets/96cd7c10-6c7c-4b98-a84e-5a159d5f80f4" />
 
-)
 
 **Feature Distributions**
 ![Feature Distribution](<img width="1539" height="805" alt="Feature Distribution Graph" src="https://github.com/user-attachments/assets/e865bfa1-da30-44ee-b31c-ce5bce488635" />
-
-)
 
 ### Phase 2: Feature Engineering & Data Preparation
 
@@ -87,9 +82,7 @@ Starting from 31 original features, 16 new features were engineered bringing the
 #### Most Predictive Features After Engineering
 The interaction features dramatically outperformed all original features. V14 × V4 achieved a correlation of 0.5749 with the fraud label, and V12 × V10 reached 0.5486 - nearly double the correlation of the best individual feature V17 (0.3265). This confirms that fraud behavior is captured not by single features alone but by combinations of them.
 
-![Top 20 Features](<img width="1200" height="800" alt="Top 20 features" src="https://github.com/user-attachments/assets/d5ac426a-7d33-4843-93eb-efca68ab61cb" />
-
-)
+<img width="1200" height="800" alt="Top 20 features" src="https://github.com/user-attachments/assets/d5ac426a-7d33-4843-93eb-efca68ab61cb" />
 
 #### Data Split Strategy
 A temporal split was used rather than a random split. This is critical because in production, a model always predicts future transactions using patterns learned from past ones. Randomising the split would leak future information into training and produce unrealistically optimistic results.
