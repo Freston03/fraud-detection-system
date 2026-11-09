@@ -16,7 +16,7 @@ learning techniques on highly imbalanced real-world financial transaction data.
 
 
 ## Dataset
-**Source:** [Kaggle — Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+**Source:** [Kaggle - Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 
 - 284,807 total transactions over 48 hours
 - 492 fraud cases — only 0.173% of all transactions
