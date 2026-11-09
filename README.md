@@ -65,7 +65,8 @@ Looking at absolute correlations with the fraud label, V17 came out on top at 0.
 )
 
 **Feature Distributions**
-![Feature Distribution](
+![Feature Distribution](<img width="1539" height="805" alt="Feature Distribution Graph" src="https://github.com/user-attachments/assets/e865bfa1-da30-44ee-b31c-ce5bce488635" />
+
 )
 
 ### Phase 2: Feature Engineering & Data Preparation
