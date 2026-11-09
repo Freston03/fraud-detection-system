@@ -19,7 +19,7 @@ learning techniques on highly imbalanced real-world financial transaction data.
 **Source:** [Kaggle - Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 
 - 284,807 total transactions over 48 hours
-- 492 fraud cases — only 0.173% of all transactions
+- 492 fraud cases - only 0.173% of all transactions
 - 30 features (V1–V28 are PCA-transformed, plus Time and Amount)
 - Imbalance ratio of 1:578 (for every fraud, there are 578 legitimate transactions)
 - 1,081 duplicate rows detected during quality check
@@ -42,7 +42,7 @@ fraud_detection_system/
 #### Data Quality
 The dataset contained no missing values, which is ideal for modeling. However, 1,081 duplicate rows were detected and flagged for attention. The data consists of 30 float64 columns and 1 integer column (the target Class label).
 
-#### Statistical Hypothesis Testing — Mann-Whitney U Test
+#### Statistical Hypothesis Testing - Mann-Whitney U Test
 A Mann-Whitney U test was applied to all 29 features to check whether their distributions differ significantly between fraud and legitimate transactions. The null hypothesis states no difference exists between the two groups. Out of 29 features tested, 25 were statistically significant at the 99% confidence level (p < 0.01). The top features by significance were V14, V4, V12, V11, and V10, with p-values as extreme as 1.47e-260, indicating overwhelmingly strong evidence of distributional differences between fraud and legitimate transactions.
 
 #### Correlation with Fraud
